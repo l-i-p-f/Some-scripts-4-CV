@@ -1,0 +1,31 @@
+# --- Visualization.py ---
+
+Useage:
+get_blob
+	show netdata
+	output data and weight params of each layer
+	such as 
+	    data:('conv1/7x7_s2', (10, 64, 112, 112))
+	    weight params:('conv1/7x7_s2', (64, 3, 7, 7))
+
+	command: python Visualization.py blob
+
+get_feature
+	extract features of layers
+
+	command: python Visualization.py feature <layer_name> <output_name> [...]
+	example: python Visualization.py feature conv1/7x7_s2 conv1
+
+get_mean
+	show pic after meanfile
+
+	command: python Visualization.py mean <output_name>
+
+get_predict
+	output prediction and visualization 
+
+	command: python Visualization.py predict [form:pie|bar|line] [output_name]
+	example: python Visualization.py predict pie save1
+
+
+
